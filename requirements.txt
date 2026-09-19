@@ -1,0 +1,14 @@
+scikit-learn>=1.6
+xgboost
+imbalanced-learn
+pandas
+numpy
+scipy
+matplotlib
+seaborn
+plotly
+joblib
+streamlit
+jupyter
+nbclient
+nbformat

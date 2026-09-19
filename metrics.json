@@ -1,0 +1,123 @@
+{
+  "n_rows": 1470,
+  "n_left": 237,
+  "attrition_rate": 0.16122448979591836,
+  "attrition_by_department": {
+    "Sales": 0.2062780269058296,
+    "Human Resources": 0.19047619047619047,
+    "Research & Development": 0.1383975026014568
+  },
+  "attrition_by_role": {
+    "Sales Representative": 0.39759036144578314,
+    "Laboratory Technician": 0.23938223938223938,
+    "Human Resources": 0.23076923076923078,
+    "Sales Executive": 0.17484662576687116,
+    "Research Scientist": 0.16095890410958905,
+    "Manufacturing Director": 0.06896551724137931,
+    "Healthcare Representative": 0.06870229007633588,
+    "Manager": 0.049019607843137254,
+    "Research Director": 0.025
+  },
+  "attrition_by_income_quartile": {
+    "Low": 0.2926829268292683,
+    "Medium": 0.14207650273224043,
+    "High": 0.10626702997275204,
+    "Very High": 0.10326086956521739
+  },
+  "attrition_by_tenure_band": {
+    "0-2": 0.2982456140350877,
+    "2-5": 0.1382488479262673,
+    "5-10": 0.12276785714285714,
+    "10-20": 0.06666666666666667,
+    "20+": 0.12121212121212122
+  },
+  "attrition_by_overtime": {
+    "No": 0.10436432637571158,
+    "Yes": 0.30528846153846156
+  },
+  "attrition_by_satisfaction_field": {
+    "EnvironmentSatisfaction": {
+      "Low": 25.35,
+      "Medium": 14.98,
+      "High": 13.69,
+      "Very High": 13.45
+    },
+    "JobInvolvement": {
+      "Low": 33.73,
+      "Medium": 18.93,
+      "High": 14.4,
+      "Very High": 9.03
+    },
+    "JobSatisfaction": {
+      "Low": 22.84,
+      "Medium": 16.43,
+      "High": 16.52,
+      "Very High": 11.33
+    },
+    "RelationshipSatisfaction": {
+      "Low": 20.65,
+      "Medium": 14.85,
+      "High": 15.47,
+      "Very High": 14.81
+    }
+  },
+  "cv_results": {
+    "Logistic Regression": {
+      "accuracy": 0.79332491886044,
+      "precision": 0.42178768943474826,
+      "recall": 0.6947368421052632,
+      "f1": 0.523272181418984,
+      "roc_auc": 0.8287398429931156
+    },
+    "Decision Tree": {
+      "accuracy": 0.7975910566173819,
+      "precision": 0.3844471975393028,
+      "recall": 0.4052631578947368,
+      "f1": 0.385290533561781,
+      "roc_auc": 0.6508950040074807
+    },
+    "Random Forest": {
+      "accuracy": 0.8741363144608727,
+      "precision": 0.7410749094959621,
+      "recall": 0.34736842105263155,
+      "f1": 0.4650082899556584,
+      "roc_auc": 0.8262151301958942
+    },
+    "XGBoost": {
+      "accuracy": 0.8758384421204471,
+      "precision": 0.7130735930735932,
+      "recall": 0.3894736842105263,
+      "f1": 0.49929953747350614,
+      "roc_auc": 0.8088851377790732
+    }
+  },
+  "chosen_model": "Logistic Regression",
+  "test_metrics": {
+    "accuracy": 0.7857142857142857,
+    "precision": 0.4,
+    "recall": 0.6808510638297872,
+    "f1": 0.5039370078740157,
+    "roc_auc": 0.8134206219312603
+  },
+  "ablation": {
+    "test_auc_with_engineered_features": 0.8134206219312603,
+    "test_auc_without_engineered_features": 0.7964510293737617
+  },
+  "top_coefficients": {
+    "cat__JobRole_Research Director": -1.8845,
+    "cat__EducationField_Other": -1.4145,
+    "cat__TenureBand_20+": -1.0624,
+    "cat__EducationField_Life Sciences": -0.845,
+    "cat__TenureBand_2-5": -0.8417,
+    "num__TotalWorkingYears": -0.8109,
+    "cat__AgeBand_35-45": -0.8018,
+    "cat__JobRole_Manager": -0.7961,
+    "cat__TenureBand_10-20": -0.7824,
+    "cat__AgeBand_55+": 0.8001,
+    "cat__BusinessTravel_Travel_Rarely": 1.0028,
+    "cat__JobRole_Laboratory Technician": 1.5711,
+    "cat__JobRole_Sales Representative": 1.6586,
+    "cat__BusinessTravel_Travel_Frequently": 1.8693,
+    "cat__OverTime_Yes": 1.9599
+  }
+}
